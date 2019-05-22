@@ -24,12 +24,14 @@ class StatusLookup(object):
         id_ = tweet['id_str']
         if id_ in self.cache:
             return
+        if ',' in id_:
+            return
 
         user = tweet['user']['id_str']
         user_name = tweet['user']['screen_name']
         self.cache[id_] = (user, user_name)
 
-        if len(self.cache) >= 100:
+        if len(self.cache.keys()) >= 100:
             self.do()
 
     def do(self):
@@ -38,7 +40,7 @@ class StatusLookup(object):
         while True:
             res = requests.get('https://api.twitter.com/1.1/statuses/lookup.json',
                                params={
-                                   'id': ','.join(self.cache.keys()),
+                                   'id': ','.join(self.cache.keys()[:100]),
                                    'include_entities': True,
                                    'trim_user': False,
                                    'map': True,

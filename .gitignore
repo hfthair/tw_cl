@@ -127,3 +127,4 @@ data/
 .vscode
 .idea
 *.tar.gz
+*.csv

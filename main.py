@@ -111,7 +111,7 @@ def main():
             print(path, len(obj))
             for tweet in obj:
                 lookup.pending(tweet)
-        except json.decoder.JSONDecodeError:
+        except: # json.decoder.JSONDecodeError:
             print('decode error: ', path)
 
     folder = 'data/'
