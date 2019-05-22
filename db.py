@@ -18,7 +18,17 @@ class Tweet(peewee.Model):
     class Meta:
         database = db
 
+
+class Unavailable(peewee.Model):
+    id_ = peewee.CharField(null=False, index=True)
+    user = peewee.CharField(null=False, index=True)
+    screen_name = peewee.CharField(null=False, index=False)
+
+    class Meta:
+        database = db
+
+
 db.connect()
-db.create_tables([Tweet])
+db.create_tables([Tweet, Unavailable])
 
 

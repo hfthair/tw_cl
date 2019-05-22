@@ -1,23 +1,33 @@
+import time
 import json
 import requests
 import requests_oauthlib
+import config
 
-consumer_key = 'cleJugf39kfeYm8rJThVslN90'
-consumer_secret = 'lED0Sp1fW11aesqx5jIx0SxKobjaNb2jagT7Go25Eej8IiJoHJ'
-
-auth = requests_oauthlib.OAuth1(consumer_key, consumer_secret)
+auth = requests_oauthlib.OAuth1(config.consumer_key, config.consumer_secret,
+                                config.access_tk, config.access_tk_secret)
 
 
 class StatusLookup(object):
-    def __init__(self):
+    def __init__(self, callback_, callback_unavailable):
         self.cache = {}
-        self.callback = None
+        self.callback = callback_
+        self.callback_unavailable = callback_unavailable
 
-    def pending(self, id_, user, call_):
+    def pending(self, tweet):
+        if 'retweeted_status' in tweet:
+            return
+        lang = tweet['lang']
+        if lang != 'en':
+            # print('not en, it is', lang)
+            return
+        id_ = tweet['id_str']
         if id_ in self.cache:
             return
-        self.cache[id_] = user
-        self.callback = call_
+
+        user = tweet['user']['id_str']
+        user_name = tweet['user']['screen_name']
+        self.cache[id_] = (user, user_name)
 
         if len(self.cache) >= 100:
             self.do()
@@ -25,7 +35,6 @@ class StatusLookup(object):
     def do(self):
         if not self.cache:
             return
-        print('do pending', len(self.cache))
         while True:
             res = requests.get('https://api.twitter.com/1.1/statuses/lookup.json',
                                params={
@@ -42,14 +51,17 @@ class StatusLookup(object):
                     if tweet:
                         self.callback(tweet)
                     else:
-                        print(i, self.cache[i])
-                        # _ = input('> ')
+                        if self.callback_unavailable:
+                            self.callback_unavailable(i, self.cache[i][0], self.cache[i][1])
                 self.cache.clear()
                 break
             else:
-                print(res.text)
-                import time
-                time.sleep(1.3)
+                print(res, res.text)
+                if 'errors' in res.text:
+                    if 'Rate limit exceeded' in res.text:
+                        print('wait 33.3s...')
+                        time.sleep(30)
+                time.sleep(3.3)
                 print('retry...')
 
 if __name__ == '__main__':

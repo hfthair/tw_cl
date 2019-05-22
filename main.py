@@ -6,22 +6,12 @@ import db
 import api
 
 
-# def debug(text, obj, reason):
-#     print('===========', reason)
-#     print(text)
-#     print('===========')
-#     print(json.dumps(obj, indent=2))
-#     import sys
-#     sys.exit(0)
-
 pattern = re.compile(r'https?://\S+', flags=re.IGNORECASE)
-lookup = api.StatusLookup()
 
 LINK = '[LINK]'
 
 def process_tweet(tweet):
     id_str = tweet['id_str']
-    # print(id_str)
     user = tweet['user']['id_str']
     user_name = tweet['user']['screen_name']
     status_url = '{}/status/{}'.format(user_name, id_str)
@@ -39,17 +29,17 @@ def process_tweet(tweet):
         return
     elif 'quote_status' in tweet:
         type_ = 'quote'
-        quoted_status_id_str = tweet['quoted_status_id_str']
-        quoted_status = tweet['quoted_status']
+        # quoted_status_id_str = tweet['quoted_status_id_str']
+        # quoted_status = tweet['quoted_status']
     elif 'in_reply_to_status_id_str' in tweet and tweet['in_reply_to_status_id_str']:
         type_ = 'reply'
-        in_reply_to_status_id_str = tweet['in_reply_to_status_id_str']
-        in_reply_to_user_id_str = tweet['in_reply_to_user_id_str']
-        in_reply_to_screen_name = tweet['in_reply_to_screen_name']
+        # in_reply_to_status_id_str = tweet['in_reply_to_status_id_str']
+        # in_reply_to_user_id_str = tweet['in_reply_to_user_id_str']
+        # in_reply_to_screen_name = tweet['in_reply_to_screen_name']
 
-    if truncated:
-        lookup.pending(id_str, (user, user_name), process_tweet)
-        return
+    # if truncated:
+    #     lookup.pending(id_str, (user, user_name), process_tweet)
+    #     return
 
     links = []
 
@@ -96,22 +86,34 @@ def process_tweet(tweet):
 
     text_unescaped = html.unescape(text)
 
-    o = db.Tweet(id_=id_str, user=user, created_at=created_at,
-                 text=text_unescaped, truncated=truncated, lang=lang,
-                 type_=type_, links='|'.join(links), debug_url=status_url)
-    o.save()
-
-
-def process_file(path):
     try:
-        obj = json.load(open(path, 'r', encoding='utf8'))
-        print(path, len(obj))
-        for tweet in obj:
-            process_tweet(tweet)
-    except json.decoder.JSONDecodeError:
-        print('decode error: ', path)
+        o = db.Tweet(id_=id_str, user=user, created_at=created_at,
+                     text=text_unescaped, truncated=truncated, lang=lang,
+                     type_=type_, links='|'.join(links), debug_url=status_url)
+        o.save()
+    except:
+        print('db error: ', id_str)
+
+
+def process_unavailable(id_, user, screen_name):
+    try:
+        db.Unavailable(id_=id_, user=user, screen_name=screen_name).save()
+    except:
+        pass
+
 
 def main():
+    lookup = api.StatusLookup(process_tweet, process_unavailable)
+
+    def process_file(path):
+        try:
+            obj = json.load(open(path, 'r', encoding='utf8'))
+            print(path, len(obj))
+            for tweet in obj:
+                lookup.pending(tweet)
+        except json.decoder.JSONDecodeError:
+            print('decode error: ', path)
+
     folder = 'data/'
     cnt = 0
     for path in os.listdir(folder):
@@ -120,8 +122,6 @@ def main():
             print(cnt, path)
             process_file(path)
             cnt = cnt + 1
-            if cnt >= 1000:
-                break
 
     lookup.do()
 
