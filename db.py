@@ -4,6 +4,7 @@ import peewee
 DoesNotExist = peewee.DoesNotExist
 
 db = peewee.SqliteDatabase("sqlite.db")
+db_origin = peewee.SqliteDatabase("origin.db")
 
 
 class Tweet(peewee.Model):
@@ -50,10 +51,29 @@ class TweetOriginal(peewee.Model):
     retweet_reply_quoted = peewee.CharField(null=True, index=False)
 
     class Meta:
-        database = db
+        database = db_origin
+
+
+class TweetLocation(peewee.Model):
+    id_ = peewee.CharField(null=False, index=True)
+    user_id = peewee.CharField(null=False, index=False)
+    path = peewee.CharField(null=False, index=False)
+
+    class Meta:
+        database = db_origin
+
+
+
+class DecodeError(peewee.Model):
+    path = peewee.CharField(null=False, index=False)
+
+    class Meta:
+        database = db_origin
 
 
 db.connect()
-db.create_tables([Tweet, TweetOriginal])
+db.create_tables([Tweet])
 
+db_origin.connect()
+db_origin.create_tables([TweetOriginal, DecodeError])
 

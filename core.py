@@ -17,8 +17,8 @@ def process_tweet(tweet):
     if 'full_text' in tweet:
         text_original = tweet['full_text']
     text_clean = text_original
-    truncated = tweet['truncated']
-    lang = tweet['lang']
+    truncated = tweet.get('truncated', False)
+    lang = tweet.get('lang', 'en')
 
     is_reply = False
     is_retweeted = False
@@ -90,3 +90,11 @@ def process_tweet(tweet):
                 lang=lang, truncated=truncated, tweet_url='{}/status/{}'.format(screen_name, id_str),
                 is_reply=is_reply, is_retweeted=is_retweeted, is_quoted=is_quoted,
                 retweet_reply_quoted=additional)
+
+def text_only(text):
+    text = pattern.sub('[LINK]', text)
+    url_types = '|'.join(['LINK'] * text.count('[LINK]'))
+    text = html.unescape(text)
+
+    return text, url_types
+
