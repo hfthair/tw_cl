@@ -25,8 +25,11 @@ def lookup(ids_, origin):
                            is_reply=False, is_retweeted=False, is_quoted=False,
                            retweet_reply_quoted='')
             try:
-                o = db.Tweet(**tmp, still_available=False, group=group,
-                             relevancy_score=relevancy_score, study_id=study_id)
+                o = db.Tweet(**tmp)
+                o.still_available = False
+                o.group = group
+                o.relevancy_score = relevancy_score
+                o.study_id = study_id
                 o.save()
             except:
                 print('db error', data['id_'])
@@ -34,8 +37,11 @@ def lookup(ids_, origin):
         else:
             tweet_ex = core.process_tweet(tweet)
             try:
-                o = db.Tweet(**tweet_ex, still_available=True, group=group,
-                             relevancy_score=relevancy_score, study_id=study_id)
+                o = db.Tweet(**tweet_ex)
+                o.still_available = True
+                o.group = group
+                o.relevancy_score = relevancy_score
+                o.study_id = study_id
                 if original_find:
                     o.truncated = original_find.get('truncated', False)
                 o.save()
