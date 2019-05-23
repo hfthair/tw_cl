@@ -128,3 +128,4 @@ data/
 .idea
 *.tar.gz
 *.csv
+*.xls*
