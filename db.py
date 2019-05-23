@@ -73,7 +73,7 @@ class DecodeError(peewee.Model):
 
 db.connect()
 db.create_tables([Tweet])
-
-db_origin.connect()
-db_origin.create_tables([TweetOriginal, DecodeError])
+#
+# db_origin.connect()
+# db_origin.create_tables([TweetOriginal, DecodeError])
 
