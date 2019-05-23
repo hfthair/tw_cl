@@ -1,10 +1,30 @@
+import json
+import os
 import pandas as pd
 import db
 import api
 import core
 
+origin_folders = []
 
-def lookup(ids_, origin):
+print('loading origin')
+
+origin = {}
+for folder in origin_folders:
+    cnt = 0
+    for path in os.listdir(folder):
+        path = folder + path
+        if not os.path.isfile(path) or not path.endswith('.jon'):
+            continue
+        with open(path, 'r', encoding='utf8') as f:
+            for line in f:
+                tweet = json.loads(line)
+                id_str = tweet['id_str']
+                origin[id_str] = tweet
+
+print('load origin done')
+
+def lookup(ids_):
     print('lookup', len(ids_))
     data = api.lookup(ids_.keys())
     print('get', len(data))
@@ -52,19 +72,16 @@ def lookup(ids_, origin):
 def main(src):
     keys = list(src.keys())
     print('total', len(keys))
-    origin = search_by_id.main(keys)
     while keys:
         cur = keys[:100]
 
-        lookup({k: src[k] for k in cur}, origin)
+        lookup({k: src[k] for k in cur})
 
         del keys[:100]
         print('left', len(keys))
 
 
 if __name__ == '__main__':
-    import search_by_id
-
     df = pd.read_excel('lib and con combined_gun.xlsx', header=0, skiprows=1)
     subset = df[['Link', 'Group', 'Relevancy score', 'Study_ID', 'Tweet']]
 
