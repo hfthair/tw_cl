@@ -64,10 +64,6 @@ def lookup(ids_):
                 o.relevancy_score = relevancy_score
                 o.study_id = study_id
                 if original_find:
-                    print('compare! q', tweet_ex['quote_count'], original_find.get('quote_count'))
-                    print('compare! r', tweet_ex['reply_count'], original_find.get('reply_count'))
-                    print('compare! f', tweet_ex['favorite_count'], original_find.get('favorite_count'))
-                    print('compare! t', tweet_ex['retweet_count'], original_find.get('retweet_count'))
                     o.truncated = original_find.get('truncated', False)
                 o.save()
             except:

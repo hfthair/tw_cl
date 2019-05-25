@@ -28,7 +28,7 @@ class Tweet(peewee.Model):
     reply_count = peewee.CharField(null=False, index=False)
     retweet_count = peewee.CharField(null=False, index=False)
     favorite_count = peewee.CharField(null=False, index=False)
-    place = peewee.CharField(null=False, index=False)
+    place = peewee.CharField(null=True, index=False)
 
     still_available = peewee.BooleanField(null=True, index=False)
     group = peewee.CharField(null=True, index=False)
@@ -60,7 +60,7 @@ class TweetOriginal(peewee.Model):
     reply_count = peewee.CharField(null=False, index=False)
     retweet_count = peewee.CharField(null=False, index=False)
     favorite_count = peewee.CharField(null=False, index=False)
-    place = peewee.CharField(null=False, index=False)
+    place = peewee.CharField(null=True, index=False)
 
     class Meta:
         database = db_origin
