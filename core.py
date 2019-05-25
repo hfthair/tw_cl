@@ -13,10 +13,10 @@ def process_tweet(tweet):
     user_id = tweet['user']['id_str']
     screen_name = tweet['user']['screen_name']
     created_at = tweet['created_at']
-    quote_count = tweet['quote_count']
-    reply_count = tweet['reply_count']
-    retweet_count = tweet['retweet_count']
-    favorite_count = tweet['favorite_count']
+    quote_count = tweet.get('quote_count', 0)
+    reply_count = tweet.get('reply_count', 0)
+    retweet_count = tweet.get('retweet_count', 0)
+    favorite_count = tweet.get('favorite_count', 0)
     text_original = tweet.get('text', '')
     if 'full_text' in tweet:
         text_original = tweet['full_text']
@@ -24,10 +24,11 @@ def process_tweet(tweet):
     truncated = tweet.get('truncated', False)
     lang = tweet.get('lang', 'en')
 
-    place = tweet['place']
-    if isinstance(place, str):
-        place = json.loads(place)
-    place = place['full_name'] + ', ' + place['country']
+    place = tweet.get('place', '')
+    if place:
+        if isinstance(place, str):
+            place = json.loads(place)
+        place = place['full_name'] + ', ' + place['country']
 
     is_reply = False
     is_retweeted = False
