@@ -14,7 +14,7 @@ for folder in origin_folders:
     cnt = 0
     for path in os.listdir(folder):
         path = folder + path
-        if not os.path.isfile(path) or not path.endswith('.jon'):
+        if not os.path.isfile(path) or not path.endswith('.json'):
             continue
         with open(path, 'r', encoding='utf8') as f:
             for line in f:
@@ -43,7 +43,8 @@ def lookup(ids_):
                            text_original=text_, text_clean=text_clean, link_type=url_types,
                            lang='', truncated=0, tweet_url='a/status/{}'.format(id_),
                            is_reply=False, is_retweeted=False, is_quoted=False,
-                           retweet_reply_quoted='')
+                           retweet_reply_quoted='', quote_count=0, reply_count=0,
+                           retweet_count=0, favorite_count=0, place='')
             try:
                 o = db.Tweet(**tmp)
                 o.still_available = False

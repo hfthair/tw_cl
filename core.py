@@ -13,12 +13,21 @@ def process_tweet(tweet):
     user_id = tweet['user']['id_str']
     screen_name = tweet['user']['screen_name']
     created_at = tweet['created_at']
+    quote_count = tweet['quote_count']
+    reply_count = tweet['reply_count']
+    retweet_count = tweet['retweet_count']
+    favorite_count = tweet['favorite_count']
     text_original = tweet.get('text', '')
     if 'full_text' in tweet:
         text_original = tweet['full_text']
     text_clean = text_original
     truncated = tweet.get('truncated', False)
     lang = tweet.get('lang', 'en')
+
+    place = tweet['place']
+    if isinstance(place, str):
+        place = json.loads(place)
+    place = place['full_name'] + ', ' + place['country']
 
     is_reply = False
     is_retweeted = False
@@ -89,7 +98,8 @@ def process_tweet(tweet):
                 text_original=text_original, text_clean=text_clean, link_type=url_types,
                 lang=lang, truncated=truncated, tweet_url='{}/status/{}'.format(screen_name, id_str),
                 is_reply=is_reply, is_retweeted=is_retweeted, is_quoted=is_quoted,
-                retweet_reply_quoted=additional)
+                retweet_reply_quoted=additional, quote_count=quote_count, reply_count=reply_count,
+                retweet_count=retweet_count, favorite_count=favorite_count, place=place)
 
 def text_only(text):
     text = pattern.sub('[LINK]', text)

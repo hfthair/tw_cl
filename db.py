@@ -24,6 +24,12 @@ class Tweet(peewee.Model):
     is_quoted = peewee.BooleanField(null=False, index=False)
     retweet_reply_quoted = peewee.CharField(null=True, index=False)
 
+    quote_count = peewee.CharField(null=False, index=False)
+    reply_count = peewee.CharField(null=False, index=False)
+    retweet_count = peewee.CharField(null=False, index=False)
+    favorite_count = peewee.CharField(null=False, index=False)
+    place = peewee.CharField(null=False, index=False)
+
     still_available = peewee.BooleanField(null=True, index=False)
     group = peewee.CharField(null=True, index=False)
     relevancy_score = peewee.CharField(null=True, index=False)
@@ -49,6 +55,12 @@ class TweetOriginal(peewee.Model):
     is_retweeted = peewee.BooleanField(null=False, index=False)
     is_quoted = peewee.BooleanField(null=False, index=False)
     retweet_reply_quoted = peewee.CharField(null=True, index=False)
+
+    quote_count = peewee.CharField(null=False, index=False)
+    reply_count = peewee.CharField(null=False, index=False)
+    retweet_count = peewee.CharField(null=False, index=False)
+    favorite_count = peewee.CharField(null=False, index=False)
+    place = peewee.CharField(null=False, index=False)
 
     class Meta:
         database = db_origin
