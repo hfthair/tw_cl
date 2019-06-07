@@ -1,0 +1,1875 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+        <fieldset>
+                <h3>Tweet 1/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text0}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t0q1" value="yes" onclick="on_yes(0)" required>Yes</input></p>
+                                <p><input type="radio" name="t0q1" value="no" onclick="on_no(0)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t0q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t0q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t0q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t0q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t0q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t0q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t0q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t0q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t0q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <!-- <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp; -->
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 2/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text1}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t1q1" value="yes" onclick="on_yes(1)" required>Yes</input></p>
+                                <p><input type="radio" name="t1q1" value="no" onclick="on_no(1)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t1q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t1q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t1q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t1q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t1q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t1q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t1q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t1q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t1q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 3/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text2}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t2q1" value="yes" onclick="on_yes(2)" required>Yes</input></p>
+                                <p><input type="radio" name="t2q1" value="no" onclick="on_no(2)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t2q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t2q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t2q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t2q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t2q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t2q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t2q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t2q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t2q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 4/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text3}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t3q1" value="yes" onclick="on_yes(3)" required>Yes</input></p>
+                                <p><input type="radio" name="t3q1" value="no" onclick="on_no(3)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t3q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t3q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t3q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t3q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t3q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t3q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t3q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t3q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t3q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 5/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text4}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t4q1" value="yes" onclick="on_yes(4)" required>Yes</input></p>
+                                <p><input type="radio" name="t4q1" value="no" onclick="on_no(4)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t4q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t4q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t4q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t4q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t4q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t4q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t4q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t4q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t4q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 6/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text5}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t5q1" value="yes" onclick="on_yes(5)" required>Yes</input></p>
+                                <p><input type="radio" name="t5q1" value="no" onclick="on_no(5)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t5q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t5q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t5q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t5q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t5q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t5q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t5q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t5q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t5q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 7/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text6}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t6q1" value="yes" onclick="on_yes(6)" required>Yes</input></p>
+                                <p><input type="radio" name="t6q1" value="no" onclick="on_no(6)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t6q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t6q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t6q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t6q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t6q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t6q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t6q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t6q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t6q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 8/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text7}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t7q1" value="yes" onclick="on_yes(7)" required>Yes</input></p>
+                                <p><input type="radio" name="t7q1" value="no" onclick="on_no(7)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t7q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t7q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t7q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t7q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t7q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t7q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t7q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t7q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t7q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 9/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text8}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t8q1" value="yes" onclick="on_yes(8)" required>Yes</input></p>
+                                <p><input type="radio" name="t8q1" value="no" onclick="on_no(8)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t8q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t8q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t8q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t8q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t8q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t8q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t8q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t8q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t8q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 10/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text9}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t9q1" value="yes" onclick="on_yes(9)" required>Yes</input></p>
+                                <p><input type="radio" name="t9q1" value="no" onclick="on_no(9)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t9q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t9q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t9q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t9q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t9q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t9q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t9q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t9q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t9q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 11/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text10}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t10q1" value="yes" onclick="on_yes(10)" required>Yes</input></p>
+                                <p><input type="radio" name="t10q1" value="no" onclick="on_no(10)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t10q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t10q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t10q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t10q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t10q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t10q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t10q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t10q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t10q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 12/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text11}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t11q1" value="yes" onclick="on_yes(11)" required>Yes</input></p>
+                                <p><input type="radio" name="t11q1" value="no" onclick="on_no(11)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t11q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t11q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t11q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t11q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t11q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t11q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t11q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t11q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t11q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 13/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text12}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t12q1" value="yes" onclick="on_yes(12)" required>Yes</input></p>
+                                <p><input type="radio" name="t12q1" value="no" onclick="on_no(12)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t12q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t12q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t12q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t12q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t12q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t12q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t12q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t12q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t12q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 14/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text13}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t13q1" value="yes" onclick="on_yes(13)" required>Yes</input></p>
+                                <p><input type="radio" name="t13q1" value="no" onclick="on_no(13)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t13q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t13q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t13q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t13q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t13q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t13q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t13q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t13q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t13q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 15/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text14}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t14q1" value="yes" onclick="on_yes(14)" required>Yes</input></p>
+                                <p><input type="radio" name="t14q1" value="no" onclick="on_no(14)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t14q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t14q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t14q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t14q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t14q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t14q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t14q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t14q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t14q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 16/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text15}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t15q1" value="yes" onclick="on_yes(15)" required>Yes</input></p>
+                                <p><input type="radio" name="t15q1" value="no" onclick="on_no(15)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t15q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t15q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t15q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t15q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t15q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t15q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t15q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t15q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t15q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 17/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text16}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t16q1" value="yes" onclick="on_yes(16)" required>Yes</input></p>
+                                <p><input type="radio" name="t16q1" value="no" onclick="on_no(16)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t16q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t16q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t16q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t16q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t16q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t16q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t16q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t16q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t16q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 18/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text17}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t17q1" value="yes" onclick="on_yes(17)" required>Yes</input></p>
+                                <p><input type="radio" name="t17q1" value="no" onclick="on_no(17)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t17q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t17q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t17q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t17q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t17q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t17q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t17q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t17q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t17q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 19/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text18}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t18q1" value="yes" onclick="on_yes(18)" required>Yes</input></p>
+                                <p><input type="radio" name="t18q1" value="no" onclick="on_no(18)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t18q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t18q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t18q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t18q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t18q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t18q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t18q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t18q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t18q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 20/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text19}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t19q1" value="yes" onclick="on_yes(19)" required>Yes</input></p>
+                                <p><input type="radio" name="t19q1" value="no" onclick="on_no(19)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t19q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t19q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t19q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t19q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t19q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t19q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t19q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t19q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t19q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 21/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text20}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t20q1" value="yes" onclick="on_yes(20)" required>Yes</input></p>
+                                <p><input type="radio" name="t20q1" value="no" onclick="on_no(20)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t20q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t20q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t20q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t20q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t20q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t20q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t20q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t20q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t20q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 22/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text21}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t21q1" value="yes" onclick="on_yes(21)" required>Yes</input></p>
+                                <p><input type="radio" name="t21q1" value="no" onclick="on_no(21)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t21q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t21q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t21q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t21q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t21q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t21q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t21q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t21q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t21q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 23/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text22}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t22q1" value="yes" onclick="on_yes(22)" required>Yes</input></p>
+                                <p><input type="radio" name="t22q1" value="no" onclick="on_no(22)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t22q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t22q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t22q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t22q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t22q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t22q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t22q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t22q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t22q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 24/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text23}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t23q1" value="yes" onclick="on_yes(23)" required>Yes</input></p>
+                                <p><input type="radio" name="t23q1" value="no" onclick="on_no(23)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t23q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t23q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t23q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t23q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t23q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t23q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t23q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t23q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t23q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <input type="button" name="next" class="next action-button" value="NEXT" />
+            </fieldset>
+        
+        
+        
+            <fieldset>
+                <h3>Tweet 25/25</h3>
+                <div class="fix_container">
+                    <div class="movable_container">
+                        <div id="Tweet1" class="Tweet">
+                            <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                                <div class="annotation-area main">
+                                    <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                        <div class="card-content">
+                                            ${text24}
+                                        </div>
+                                    </crowd-card>
+                                </div>
+                            </div>
+                            <div>
+                                <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                                <p><input type="radio" name="t24q1" value="yes" onclick="on_yes(24)" required>Yes</input></p>
+                                <p><input type="radio" name="t24q1" value="no" onclick="on_no(24)" required>No</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                                    <strong>Q1</strong>?</p>
+                                <p><input type="radio" name="t24q2" value="low" required>Low</input></p>
+                                <p><input type="radio" name="t24q2" value="medium" required>Medium</input></p>
+                                <p><input type="radio" name="t24q2" value="high" required>High</input></p>
+                            </div><br />
+        
+                            <div>
+                                <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                                    <strong>Harm/Care? </strong></p>
+                                <p><input type="radio" name="t24q3" value="harm">Harm only</input></p>
+                                <p><input type="radio" name="t24q3" value="care">Care only</input></p>
+                                <p><input type="radio" name="t24q3" value="both">Both Harm & Care</input></p>
+                            </div><br />
+                            <div>
+                                <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                                <p><input type="radio" name="t24q4" value="low">Low</input></p>
+                                <p><input type="radio" name="t24q4" value="medium">Medium</input></p>
+                                <p><input type="radio" name="t24q4" value="high">High</input></p>
+                            </div><br />
+                        </div></br>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+                <!-- <input type="button" name="next" class="next action-button" value="NEXT" /> -->
+                <input type='submit' id='submitButton' value='Submit' /></br>
+            </fieldset>
+        
+
+
+    <script>
+        $(document).ready(function () {
+            $(".next").click(function (event) {
+                var current_index = $(this).parent().index("fieldset");
+                if (validateStep(current_index)) {
+                    makeStepActive(current_index + 1);
+                } else {
+                    alert('Please finish all questions on this page.')
+                    event.preventDefault();
+                }
+            });
+
+            $(".previous").click(function () {
+                var current_index = $(this).parent().index("fieldset");
+                makeStepActive(current_index - 1);
+            });
+
+            random_order();
+
+            makeStepActive(0);
+
+            jQuery('span.emoji-bytes').each(displayEmoji);
+        });
+
+        function makeStepActive(index) {
+            var feildset = $("fieldset:eq(" + index + ")");
+            if (feildset.length) {
+                $("fieldset").hide();
+                feildset.slideDown(500);
+            }
+        }
+
+        function validateStep(step) {
+            if ($("fieldset:eq("+step+") input[name$='q1']:checked").size() == 0
+                || $("fieldset:eq("+step+") input[name$='q2']:checked").size() == 0) {
+                return false;
+            }
+            if ($("fieldset:eq("+step+") input[required]").size() > 5) {
+                if ($("fieldset:eq("+step+") input[name$='q3']:checked").size() == 0
+                    || $("fieldset:eq("+step+") input[name$='q4']:checked").size() == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function random_order() {
+            function shuffle(a) {
+                var j, x, i;
+                for (i = a.length - 1; i > 0; i--) {
+                    j = Math.floor(Math.random() * (i + 1));
+                    x = a[i];
+                    a[i] = a[j];
+                    a[j] = x;
+                }
+                return a;
+            }
+
+            var m = $(".movable_container");
+            var f = $(".fix_container");
+
+            var N = m.size();
+            var order = [];
+            for (var i = 0; i < N; i++) {
+                order.push(i);
+            }
+            order = shuffle(order);
+            
+            m.detach()
+            f.each(function (i)  {
+                $(this).append(m.get(order[i]));
+            })
+        }
+
+        function displayEmoji() {
+            var utf8ByteArrayToString = function (bytes) {
+                var out = [], pos = 0, c = 0;
+                while (pos < bytes.length) {
+                    var c1 = bytes[pos++];
+                    if (c1 < 128) {
+                        out[c++] = String.fromCharCode(c1);
+                    } else if (c1 > 191 && c1 < 224) {
+                        var c2 = bytes[pos++];
+                        out[c++] = String.fromCharCode((c1 & 31) << 6 | c2 & 63);
+                    } else if (c1 > 239 && c1 < 365) {
+                        // Surrogate Pair
+                        var c2 = bytes[pos++];
+                        var c3 = bytes[pos++];
+                        var c4 = bytes[pos++];
+                        var u = ((c1 & 7) << 18 | (c2 & 63) << 12 | (c3 & 63) << 6 | c4 & 63) -
+                            0x10000;
+                        out[c++] = String.fromCharCode(0xD800 + (u >> 10));
+                        out[c++] = String.fromCharCode(0xDC00 + (u & 1023));
+                    } else {
+                        var c2 = bytes[pos++];
+                        var c3 = bytes[pos++];
+                        out[c++] =
+                            String.fromCharCode((c1 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                    }
+                }
+                return out.join('');
+            }
+
+            jQuery(this).text(utf8ByteArrayToString(JSON.parse(jQuery(this).attr('data-emoji-bytes'))));
+        }
+    </script>
+
+    <script type="text/javascript">
+        function on_yes(i) {
+            var els = document.getElementsByName("t"+i+"q3");
+            els.forEach(function (el) {
+                el.required = true;
+                // el.setAttribute("required", "");
+                el.disabled = false;
+            });
+            els = document.getElementsByName("t"+i+"q4");
+            els.forEach(function (el) {
+                el.required = true;
+                // el.setAttribute("required", "");
+                el.disabled = false;
+            });
+        }
+        function on_no(i) {
+            var els = document.getElementsByName("t"+i+"q3");
+            els.forEach(function (el) {
+                el.required = false;
+                // el.removeAttribute("required");
+                el.disabled = true;
+                el.checked = false;
+            })
+            els = document.getElementsByName("t"+i+"q4");
+            els.forEach(function (el) {
+                el.required = false;
+                // el.removeAttribute("required");
+                el.disabled = true;
+                el.checked = false;
+            })
+        }
+    </script>
+
+    <style>
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            buttom: 0px;
+            font-size: 17px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        input[type=button] {
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+            font-size: 17px;
+        }
+    </style>
+
+
+    <input name="id" value="${id}" style="display: none"></input>
+
+
+    <full-instructions header="Gun Control Tweet annotation">
+<p>
+In this task, you will do the following steps: (1) read tweets that are relevant to GUN issues, (2) decide
+whether a tweet is associated with <strong><i>Care/Harm</i></strong>, and rate your confidence levels for this
+decision, and (3) decide how the tweet is associated with <strong><i>Care/Harm</i></strong> -- Care only, 
+Harm only, or Both Care &amp; Harm -- and rate your confidence levels for this decision.
+</p>
+
+<h3>1. How to read a tweet? </h3>
+
+<p>
+1.1 <strong>Read all the information</strong> and read all the sentences and expressions (hashtags, emojis,
+punctuations, other creative expressions of using words/characters/symbols) <strong>as a whole</strong>.
+</p>
+<ul>
+<li>
+<p>
+When you see a tweet contains [PHOTO], [VIDEO], or [LINK], this means the tweet has &quot;embedded content&quot; --
+including multimedia content (photos, videos, etc.) or a URL linking to external information (news articles,
+blogs, etc.). We have removed such embedded information to help you <u>focus on the present text</u>. You should answer
+the questions without seeing the embedded content.
+</p>
+</li>
+<li>
+<p>
+When you see a tweet contains @Username, this means that this tweet is in conversations with another Twitter
+user with this Username. Some of the user names belong to a public figure and can be recognized (e.g.,
+@realDonalTrump is the president, @repXXX refers to representatives, @senateXXX refers to senators). You have to
+pay attention to @Username, in order to know the tweet, in some cases, is in conversation with specific persons.
+</p>
+</li>
+<li>
+<p>
+When you see a tweet contains #Hashtag, you need to take hashtags as part of the tweet content. Usually,
+hashtags situate the tweet discussion in relevant contexts and may be used to express a particular idea, claim,
+or slogan that calls to action.
+</p>
+</li>
+</ul>
+
+<p>
+1.2. Interpret the message <strong>from the author&#39;s (Twitter user&#39;s) view</strong>
+</p>
+<p>
+You will determine whether <strong><i>Care/Harm</i></strong> is conveyed in a Tweet from the Tweet author&#39;s perspective, not from the
+perspective of the readers or of yourself.
+</p>
+<p>
+Some tweets are sarcasm, meaning that the tweet expresses something in a mocking way so everyone else knows it
+means the opposite. When you see sarcasm in a tweet, interpret what the author intended to say, e.g., when the
+author said &quot;no harm&quot; sarcastically, s/he intended to say &quot;harm.&quot;
+</p>
+
+<h3>2. What is <strong><i>Care/Harm</i></strong>?</h3>
+
+<p>
+The <strong><i>Care/Harm</i></strong> is a moral intuition that involves care for others, generosity,
+compassion, ability to feel the pain of others, sensitivity to the suffering of others, prohibiting actions that
+harm others. People use this intuition to judge if someone/something is
+</p>
+<p>
+<strong><i>Caring</i></strong> -- that someone/something prevents or alleviates harm and care for others.
+</p>
+<p>
+<strong><i>Harmful</i></strong> -- that someone/something causes pain and suffering, or
+</p>
+<p>
+Tweets talking about <strong><i>Care</i></strong> may
+</p>
+<ul>
+<li>
+<p>refer to or suggest (by the tweet author) something that is caring (e.g., empathy, sympathy, compassion,
+generosity) or someone who acts to care for others (e.g., protect, pray for the victims of guns, advocates
+solutions to prevent harm or increase safety, call for leaders or the public to act for preventing harm), or
+something is being cared (e.g., saved)</p>
+</li>
+<li>
+<p>have to do with an actions/solutions that aim to prevent harm or increase safety (e.g., a bill aims at
+disarming hate, prevent violence, enhance safety net by a background check);</p>
+</li>
+</ul>
+<p>
+Tweets talking about <strong><i>Harm</i></strong> may
+</p>
+<ul>
+<li>
+<p>refer to or suggest (by the tweet author) something (e.g., weapons, gun violence, shooting, mass shooting,
+hate) or someone (e.g., bad guys, thugs, terrorists, shooter, persons under FBI watch list) that does or may
+do harm to someone (e.g., victim)</p>
+</li>
+<li>
+<p>have to do with actions/solutions/policies that (1) may do harm or (2) may not be helpful in preventing harm</p>
+</li>
+</ul>
+
+<h3>3. How a tweet is associated with <strong><i>Care/Harm</i></strong>?</h3>
+
+<p>
+Some tweets may only focus on <strong><i>Care</i></strong>, some only focus on <strong><i>Harm</i></strong>,
+others may concern about both <strong><i>Care &amp; Harm</i></strong>. See examples in 5.
+</p>
+
+<h3>4. Annotation instruction:</h3>
+
+<p>
+For each tweet, answer the following questions:
+</p>
+<center>
+<table border="1" cellpadding="10">
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Q1. &nbsp;Does <strong>the tweet involves talking about
+    <i>Care/Harm</i></strong>? </p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Yes / No</p>
+<p>Q2. &nbsp;How confident you are for the above answer in Q1? 
+</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Low / Medium / High</p>
+<p>Q3. &nbsp;If <strong>you answer Yes in Q1, how is the tweet
+associated with <i>Care/Harm</i>?</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Care only / Harm only / Both Care &amp; Harm</p>
+<p>Q4.&nbsp; How confident you are for the above answer in Q3? </p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Low / Medium / High</p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<h3>5. Examples:</h3>
+
+<center>
+<table border="1" width="80%" cellpadding="10">
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Tweet</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Q1</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Q3</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Why?</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>What do criminals do? They break the law, (Stealing, murdering,
+    etc) How will gun control stop them from using them?</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Harm only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet refers to <strong>some people,
+</strong>&ldquo;criminals&rdquo; <strong>who did harmful things</strong>,
+    &ldquo;break the law (Stealing, murdering, etc)&rdquo;</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@primharryschool this is being portrayed as a gun control issue. it
+    was an act of terrorism towards the LGBT community</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Harm only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweets in conversation with &ldquo;@primharryschool&rdquo;, arguing that
+<strong>the issue, &ldquo;terrorism&rdquo; towards specifical
+    community &nbsp; is a harmful thing</strong>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Thankfully, Islam is a religion of peace. Things would be bad
+    otherwise. Our biggest problems are gun control and bathroom policy.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Harm only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet is sarcasm. It involves judging things will be more
+    harmful or not..</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Politicians&#39; thoughts and prayers aren&#39;t doing anything to
+    actually end gun violence in this country.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Harm only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet suggests that <strong>certain action</strong>,
+    &ldquo;Politicians&rsquo; thoughts and prayers&rdquo; <strong>will not end
+    the harmful things</strong>, &ldquo;gun violence&rdquo;. So the situation
+    will stay harmful. The focus is the continuous harm.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@RepDavidYoung what are you going to do to protect #Americans
+    from gun violence? Just #ThoughtsAndPrayers ? Or just do what the #NRA says</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Care only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet is in conversation with &ldquo;@RepDavidYoung &ldquo;, asking him
+    how he would <strong>act
+    to protect </strong>Americans from harm, &ldquo;gun
+    violence&rdquo;.</p>
+<p></p>
+<p>The focus is the act that will prevent harm, not harm.
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@Abbaraju4tfc and thank god the second amendment allows us to
+    protect ourselves. [LINK]</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Care only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet refers to &ldquo;second amendment&rdquo; as <strong>something that will
+    protect</strong></p>
+<p></p>
+<p>There is embedded information, [LINK], which you do not have to
+    concern what its content is. Focus on the text you can see here.</p>
+<p></p>
+<p>To have to read from the Twiter user&rsquo;s view. That
+    is, regardless of your own position on whether you think the second amendment will protect,
+    this Twitter user means so. &nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>I&#39;m not backing down on gun violence until Congress acts to
+    #DisarmHate. [LINK]</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Care only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet has to do a determination of <strong>acting to find a
+    solution that will stop  &ldquo;gun violence&rdquo; and &ldquo;hate&rdquo;, </strong>&ldquo;#DisarmHate&rdquo;.</p>
+<p></p>
+<p>This hashtag is used to suggest a particular action and its
+    position.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@RepMaloney thank you for standing up to gun violence. Enough is
+    enough. Keep the faith and have courage. We are with you in this fight..</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Care only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet is in conversation with &ldquo;@RepMaloney&rdquo;, a representative,
+    &nbsp;suggesting that <strong>he is standing up for preventing</strong>
+    , &ldquo;gun violence&rdquo; and increase safety.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@reppittenger You have a moral obligation to vote and address gun
+    violence #holdthefloor #CommonSenseGunLaws #NoBillNoBreak We Demand Action</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes&nbsp;</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Care only</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet is in conversation with &ldquo;@reppittenger&rdquo;, a
+    representative, <strong>requesting him to act to address</strong>&nbsp;gun violence,
+the harm..</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Every day, 91 Americans are killed by gun violence. @SenTedCruz, we
+    demand you pass common-sense gun laws.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Both Care &amp; Harm</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet is in conversation with &ldquo;@SenTedCruz&rdquo;, the senator. It
+    first talks about <strong>people being harmed</strong>&nbsp;(killed) and
+    then <strong>demands </strong>the senator <strong>to act
+    to stop the harm</strong>, &ldquo;pass common-sense gun laws&rdquo;
+</p>
+<p></p>
+<p>To have to read from the Twiter user&rsquo;s view. That is,
+    regardless of your own position on whether you think common-sense gun laws can stop gun
+    violence, this Twitter user means so. &nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Terror threat is the single most powerful reason why the Second
+    Amendment is vital to ensure people can and has right to defend themselves.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Yes</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Both Care &amp; Harm</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet talks about <strong>a harmful thing</strong>,
+    &ldquo;terror threat&rdquo; first, and then <strong>suggests the way to
+    ensure people to defend and protect </strong>themselves is the &ldquo;Second
+    Amendment.&rdquo; </p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Brilliant argument. Shocking stats. Kristoff nails it on gun
+    control. [LINK]</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>No</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>N/A</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet has a positive judgment about something, deemed it as
+    good, but has not indication of using <strong><i>Care/Harm</i></strong> intution to judge something is harmful or
+    caring in particular.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@NewDay You leave out of the tape on Trump about Hillary and the
+    second amendment, &quot;That would be a horrible day.&quot;</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>No</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>N/A</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet has a negative judgment about today, deemed it may be
+    terrobile, but has no specific use of <strong><i>Care/Harm</i></strong> intution to judge something is harmful or
+    caring in particular.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@repjohnlewis thank you sir for leading the fight to pass gun
+    control. You&#39;re not only a civil rights hero, but a human rights hero too.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>No</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>N/A</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet has a positive judgment about &ldquo;@repjohnlewis&rdquo;,
+    deemed it good, but has no specific use of <strong><i>Care/Harm</i></strong> intution to judge him as a hero.
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>@SenThomTillis I support the #filibuster. &nbsp;It&#39;s past
+    time to enact common-sense gun laws. &nbsp;Do it now.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>No</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>N/A</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>This tweet has a positive judgment about common-sense gun laws, but
+    has no specific expression of using <strong><i>Care/Harm</i></strong> intution to judge something is harmful or
+    caring in particular. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+    </full-instructions>
+
+    <short-instructions>
+        <p>In this task, you will do the following steps:</p>
+        <ol>
+            <li><p>read tweets that are relevant to GUN issues,</p></li>
+            <li><p>decide whether a tweet is associated with <strong><i>Care/Harm</i></strong>, and rate your confidence levels for this
+decision, and </p></li>
+<li><p>decide how the tweet is associated with <strong><i>Care/Harm</i></strong> -- Care only, 
+Harm only, or Both Care &amp; Harm -- and rate your confidence levels for this decision.</p></li>
+        </ol>
+    </short-instructions>
+
+
+</crowd-form>

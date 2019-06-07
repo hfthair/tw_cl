@@ -4,7 +4,11 @@ TweetID | TweetTime (when the tweet is posted) | Group | Hyperlink of the tweets
 SELECT id_ as TweetID, text_original, text_clean, link_type, lang, truncated, is_reply, is_retweeted, is_quoted, still_available
 FROM tweet
 
-SELECT id_ as TweetID, created_at, text_original, text_clean, link_type, lang, truncated, tweet_url, still_available, 'group', relevancy_score, study_id
+SELECT id_ as TweetID, created_at, text_original,
+text_clean, link_type, lang, truncated, tweet_url,
+still_available, `group`, relevancy_score, study_id,
+is_reply, is_retweeted, is_quoted, quote_count, reply_count,
+retweet_count, favorite_count, place
 FROM tweet
 
 SELECT id_ as TweetID, user_id, screen_name, created_at, text_original, text_clean, link_type, lang, truncated, tweet_url, is_reply, is_retweeted, is_quoted, retweet_reply_quoted, still_available, 'group', relevancy_score, study_id 

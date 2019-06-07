@@ -129,3 +129,4 @@ data/
 *.tar.gz
 *.csv
 *.xls*
+*sqlite.db*

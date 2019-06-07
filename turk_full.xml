@@ -1,0 +1,25 @@
+<QuestionForm xmlns='http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd'>
+<Question>
+<QuestionIdentifier>Instruction</QuestionIdentifier>
+<DisplayName>Instruction</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<FormattedContent><![CDATA[
+{i}
+]]></FormattedContent>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>checkbox</StyleSuggestion>
+<Selections>
+<Selection>
+<SelectionIdentifier>I have read the instruction</SelectionIdentifier>
+<Text> I have read the instruction</Text>
+</Selection>
+</Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+{t}
+{q}
+</QuestionForm>

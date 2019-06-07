@@ -1,0 +1,703 @@
+
+<AnswerKey xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/AnswerKey.xsd">
+  
+<Question>
+    <QuestionIdentifier>q742680510300819458.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742680510300819458.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742072966716919809.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742072966716919809.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q776105657351151616.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q776105657351151616.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q743958409360347136.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q743958409360347136.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742043477479849985.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742043477479849985.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q743214714969161728.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q743214714969161728.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q749627591154278400.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q749627591154278400.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q759017361873653761.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q759017361873653761.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q748686182209335297.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q748686182209335297.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q745018178892238848.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q745018178892238848.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q748188079412805632.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q748188079412805632.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742190483766714370.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742190483766714370.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742030587029008384.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742030587029008384.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742009733347823616.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742009733347823616.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q826099603204349952.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q826099603204349952.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q745806102340702208.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q745806102340702208.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q742387359254216704.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q742387359254216704.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q767747067410284545.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q767747067410284545.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q743087587938738177.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q743087587938738177.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q745796098699075586.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q745796098699075586.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q796395694663827456.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q796395694663827456.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q743063143820066816.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q743063143820066816.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q743180412172656640.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q743180412172656640.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q738380087280697348.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q738380087280697348.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+
+<Question>
+    <QuestionIdentifier>q770586655547912194.1</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Yes</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>No</SelectionIdentifier>
+      <AnswerScore>1</AnswerScore>
+    </AnswerOption>
+</Question>
+<Question>
+    <QuestionIdentifier>q770586655547912194.3</QuestionIdentifier>
+    <AnswerOption>
+      <SelectionIdentifier>Harm only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Care only</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+    <AnswerOption>
+      <SelectionIdentifier>Both Harm Care</SelectionIdentifier>
+      <AnswerScore>0</AnswerScore>
+    </AnswerOption>
+</Question>
+
+</AnswerKey>

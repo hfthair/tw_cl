@@ -1,0 +1,463 @@
+<Question>
+      <QuestionIdentifier>q1</QuestionIdentifier>
+      <DisplayName>q1</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            What do criminals do? They break the law, (Stealing, murdering, etc) How will gun control stop them from using them?
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q1.1</QuestionIdentifier>
+      <DisplayName>q1.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q1.2</QuestionIdentifier>
+      <DisplayName>q1.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+
+
+<Question>
+      <QuestionIdentifier>q2</QuestionIdentifier>
+      <DisplayName>q2</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            @primharryschool this is being portrayed as a gun control issue. it was an act of terrorism towards the LGBT community
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q2.1</QuestionIdentifier>
+      <DisplayName>q2.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q2.2</QuestionIdentifier>
+      <DisplayName>q2.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+
+
+<Question>
+      <QuestionIdentifier>q3</QuestionIdentifier>
+      <DisplayName>q3</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            Thankfully, Islam is a religion of peace. Things would be bad otherwise. Our biggest problems are gun control and bathroom policy.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q3.1</QuestionIdentifier>
+      <DisplayName>q3.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q3.2</QuestionIdentifier>
+      <DisplayName>q3.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+
+
+<Question>
+      <QuestionIdentifier>q4</QuestionIdentifier>
+      <DisplayName>q4</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            Politicians&#x27; thoughts and prayers aren&#x27;t doing anything to actually end gun violence in this country.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q4.1</QuestionIdentifier>
+      <DisplayName>q4.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q4.2</QuestionIdentifier>
+      <DisplayName>q4.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+
+
+<Question>
+      <QuestionIdentifier>q5</QuestionIdentifier>
+      <DisplayName>q5</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            @RepDavidYoung what are you going to do to protect #Americans from gun violence? Just #ThoughtsAndPrayers ? Or just do what the #NRA says
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q5.1</QuestionIdentifier>
+      <DisplayName>q5.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q5.2</QuestionIdentifier>
+      <DisplayName>q5.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+
+<Question>
+      <QuestionIdentifier>q6</QuestionIdentifier>
+      <DisplayName>q6</DisplayName>
+      <QuestionContent>
+        <FormattedContent><![CDATA[
+            <table border="1" width="60%">
+                <tbody>
+                    <tr>
+                        <td>
+                            @Abbaraju4tfc and thank god the second amendment allows us to protect ourselves. [LINK]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        ]]></FormattedContent>
+      </QuestionContent>
+      <AnswerSpecification>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q6.1</QuestionIdentifier>
+      <DisplayName>q6.1</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q1.  Does the tweet involve talking about Harm/Care? 
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Yes</SelectionIdentifier>
+              <Text>Yes</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>No</SelectionIdentifier>
+              <Text>No</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>
+  
+  <Question>
+      <QuestionIdentifier>q6.2</QuestionIdentifier>
+      <DisplayName>q6.2</DisplayName>
+      <IsRequired>true</IsRequired>
+      <QuestionContent>
+        <Text>
+            Q2.  If you answer Yes in Q1, how is the tweet associated with Harm/Care?  
+        </Text>
+      </QuestionContent>
+      <AnswerSpecification>
+        <SelectionAnswer>
+          <StyleSuggestion>radiobutton</StyleSuggestion>
+          <Selections>
+            <Selection>
+              <SelectionIdentifier>Harm only</SelectionIdentifier>
+              <Text>Harm only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Care only</SelectionIdentifier>
+              <Text>Care only</Text>
+            </Selection>
+            <Selection>
+              <SelectionIdentifier>Both Harm & Care</SelectionIdentifier>
+              <Text>Both Harm & Care</Text>
+            </Selection>
+          </Selections>
+        </SelectionAnswer>
+      </AnswerSpecification>
+  </Question>

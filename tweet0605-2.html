@@ -1,0 +1,264 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+    <!-- error messages -->
+    <span class="fs-error"></span>
+
+
+    <fieldset>
+        <h3>Tweet 1/25</h3>
+        <div class="fix_container">
+            <div class="movable_container">
+                <div id="Tweet1" class="Tweet">
+                    <div class="annotation-area container" style="width: calc(100% - 5.6rem);">
+                        <div class="annotation-area main">
+                            <crowd-card elevation="1" aria-label="" style="width: 80%;">
+                                <div class="card-content">
+                                    ${text0}
+                                </div>
+                            </crowd-card>
+                        </div>
+                    </div>
+                    <div>
+                        <p> <strong>Q1.</strong> Does the tweet involves talking about <strong>Harm/Care?</strong></p>
+                        <p><input type="radio" name="t0q1" value="yes" onclick="on_yes(0)" required>Yes</input></p>
+                        <p><input type="radio" name="t0q1" value="no" onclick="on_no(0)" required>No</input></p>
+                    </div><br />
+
+                    <div>
+                        <p><strong>Q2.</strong> How <strong>confident</strong> you are for the above answer in
+                            <strong>Q1</strong>?</p>
+                        <p><input type="radio" name="t0q2" value="low" required>Low</input></p>
+                        <p><input type="radio" name="t0q2" value="medium" required>Medium</input></p>
+                        <p><input type="radio" name="t0q2" value="high" required>High</input></p>
+                    </div><br />
+
+                    <div>
+                        <p><strong>Q3.</strong> If you answer <strong>Yes in Q1</strong>, how is the tweet associated with
+                            <strong>Harm/Care? </strong></p>
+                        <p><input type="radio" name="t0q3" value="harm">Harm only</input></p>
+                        <p><input type="radio" name="t0q3" value="care">Care only</input></p>
+                        <p><input type="radio" name="t0q3" value="both">Both Harm & Care</input></p>
+                    </div><br />
+                    <div>
+                        <p><strong>Q4.</strong> How <strong>confident</strong> you are for the above answer in <strong>Q3</strong>?</p>
+                        <p><input type="radio" name="t0q4" value="low">Low</input></p>
+                        <p><input type="radio" name="t0q4" value="medium">Medium</input></p>
+                        <p><input type="radio" name="t0q4" value="high">High</input></p>
+                    </div><br />
+                </div></br>
+            </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="BACK" />&nbsp;&nbsp;&nbsp;
+        <input type="button" name="next" class="next action-button" value="NEXT" />
+    </fieldset>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".next").click(function (event) {
+                var current_index = $(this).parent().index("fieldset");
+                if (validateStep(current_index)) {
+                    makeStepActive(current_index + 1);
+                } else {
+                    alert('Please finish all questions on this page.')
+                    event.preventDefault();
+                }
+            });
+
+            $(".previous").click(function () {
+                var current_index = $(this).parent().index("fieldset");
+                makeStepActive(current_index - 1);
+            });
+
+            random_order();
+
+            makeStepActive(0);
+        });
+
+        function makeStepActive(index) {
+            var feildset = $("fieldset:eq(" + index + ")");
+            if (feildset.length) {
+                $("fieldset").hide();
+                feildset.slideDown(500);
+            }
+        }
+
+        function validateStep(step) {
+            if ($("fieldset:eq("+step+") input[name='t"+step+"q1']:checked").size() == 0
+                || $("fieldset:eq("+step+") input[name='t"+step+"q2']:checked").size() == 0) {
+                return false;
+            }
+            if ($("fieldset:eq("+step+") input[required]").size() > 5) {
+                if ($("fieldset:eq("+step+") input[name='t"+step+"q3']:checked").size() == 0
+                    || $("fieldset:eq("+step+") input[name='t"+step+"q4']:checked").size() == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function random_order() {
+            function shuffle(a) {
+                var j, x, i;
+                for (i = a.length - 1; i > 0; i--) {
+                    j = Math.floor(Math.random() * (i + 1));
+                    x = a[i];
+                    a[i] = a[j];
+                    a[j] = x;
+                }
+                return a;
+            }
+
+            var m = $(".movable_container");
+            var f = $(".fix_container");
+
+            var N = m.size();
+            var order = [];
+            for (var i = 0; i < N; i++) {
+                order.push(i);
+            }
+            order = shuffle(order);
+            
+            m.detach()
+            f.each(function (i)  {
+                $(this).append(m.get(order[i]));
+            })
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function on_yes(i) {
+            var els = document.getElementsByName("t"+i+"q3");
+            els.forEach(function (el) {
+                el.required = true;
+                // el.setAttribute("required", "");
+            });
+            els = document.getElementsByName("t"+i+"q4");
+            els.forEach(function (el) {
+                el.required = true;
+                // el.setAttribute("required", "");
+            });
+        }
+        function on_no(i) {
+            var els = document.getElementsByName("t"+i+"q3");
+            els.forEach(function (el) {
+                el.required = false;
+                // el.removeAttribute("required");
+            })
+            els = document.getElementsByName("t"+i+"q4");
+            els.forEach(function (el) {
+                el.required = false;
+                // el.removeAttribute("required");
+            })
+        }
+    </script>
+
+    <style>
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            buttom: 0px;
+            font-size: 17px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+
+        input[type=button] {
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: center;
+            font-size: 17px;
+        }
+    </style>
+
+
+    <input name="id" value="${id}" style="display: none"></input>
+
+
+    <full-instructions header="Gun Control Tweet annotation">
+        <p><strong>In this task, you will do the following steps: </strong></p>
+        <p>(1) Read tweets that are relevant to GUN issues </br>
+            (2) Decide whether a tweet is associated with Harm/Care, and rate your confidence levels for this
+            decision</br>
+            (3) Decide how the tweet is associated with Harm/CareI -- Harm only, Care only, or Both Harm & Care -- and
+            rate your confidence levels for this decision.
+        </p>
+
+        <p><strong>1. How to read a tweet?</strong></p>
+        <p>1.1 Read all the information and read all the sentences and expressions (hashtags, emojis, punctuations,
+            other creative expressions of using words/characters/symbols) as a whole.</p>
+        <p>When you see a tweet contains [PHOTO], [VIDEO], or [LINK], this means the tweet has “embedded content” --
+            including multimedia content (photos, videos, etc.) or a URL linking to external information (news articles,
+            blogs, etc.). We have removed such embedded information to help you focus on the present text. You should
+            answer the questions without seeing the embedded content.</p>
+        <p>When you see a tweet contains @Username, this means that this tweet is in conversations with another Twitter
+            user with this Username. Some of the user names belong to a public figure and can be recognized (e.g.,
+            @realDonalTrump is the president, @repXXX refers to representatives, @senateXXX refers to senators). You
+            have to pay attention to @Username, in order to know the tweet, in some cases, is in conversation with
+            specific persons.</p>
+        <p>When you see a tweet contains #Hashtag, you need to take hashtags as part of the tweet content. Usually,
+            hashtags situate the tweet discussion in relevant contexts and may be used to express a particular idea or
+            claim and associated with certain emotions and feeling, or advocate certain movements.</p>
+        <p>1.2. Interpret the message from the author’s (Twitter user’s) view</p>
+        <p>You will determine whether Harm/Care is conveyed in a Tweet from the Tweet author’s perspective, not from the
+            perspective of the readers or of yourself. </p>
+        <p>Some tweets are sarcasm, meaning that the tweet expresses something in a mocking way so everyone else knows
+            it means the opposite. When you see a sarcasm in a tweet, you decide what it actually means.</p>
+        <p><strong>2. What is Harm/Care?</strong></p>
+        <p>The <strong>Harm/Care</strong> is a moral intuition that involves care for others, generosity, compassion,
+            ability to feel the pain of others, sensitivity to the suffering of others, prohibiting actions that harm
+            others. People use this intuition to judge if someone/something is </br>
+            <strong>Harmful</strong> -- that someone/something causes pain and suffering</br>
+            <strong>Caring</strong> -- that someone/something prevents or alleviates harm and care for others</p>
+        <p>Tweets talking about <strong>Harm</strong> may </br>
+            1. refer to or suggest (by the tweet author) something (e.g., weapons, gun violence, shooting, mass
+            shooting, hate) or someone (e.g., bad guys, thugs, terrorists, shooter, persons under FBI watch list) that
+            does or may do harm to someone (e.g., victim)</br>
+            2. have to do with actions/solutions/policies that (1) may do harm or (2) may not be helpful in preventing
+            harm</p>
+        <p>Tweets talking about <strong>Care</strong> may</br>
+            1. refer to or suggest (by the tweet author) something that is caring (e.g., empathy, sympathy, compassion,
+            generosity) or someone who acts to care for others (e.g., protect, pray for the victims of guns, advocates
+            solutions to prevent harm or increase safety, call for leaders or the public to act for preventing harm), or
+            something is being cared (e.g., saved)</br>
+            2. have to do with an actions/solutions that aim to prevent harm or increase safety (e.g., a bill aims at
+            disarming hate, prevent violence, enhance safety net by a background check);
+        </p>
+        <p><strong>3. How a tweet is associated with Harm/Care?</strong></p>
+        <p>Some tweets may only focus on Harm, some only focus on Care, others may concern about both Harm & Care. </p>
+    </full-instructions>
+
+    <short-instructions>
+        <p>
+            (1) Read tweets that are relevant to GUN issues. </br></br>
+            (2) Decide whether a tweet is associated with Harm/Care, and rate your confidence levels for this
+            decision.</br></br>
+            (3) Decide how the tweet is associated with Harm/CareI -- Harm only, Care only, or Both Harm & Care -- and
+            rate your confidence levels for this decision.
+        </p>
+    </short-instructions>
+
+
+    <p><input type='submit' id='submitButton' value='Submit' /></p></br>
+</crowd-form>

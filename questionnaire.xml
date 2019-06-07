@@ -1,0 +1,106 @@
+
+<Question>
+<QuestionIdentifier>Gender</QuestionIdentifier>
+<DisplayName>Gender</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<FormattedContent><![CDATA[
+<hr/>
+<h2>III. Demographic survey questionnaire</h2>
+<p>Please provide your basic demographic information. Your response to the
+following questions are voluntary and will not affect your qualification as
+a Worker for this task.</p>
+<hr/>
+]]></FormattedContent>
+<Title>What is your gender?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>radiobutton</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Female</SelectionIdentifier> <Text>Female</Text> </Selection> <Selection> <SelectionIdentifier>Male</SelectionIdentifier> <Text>Male</Text> </Selection> <Selection> <SelectionIdentifier>Non-binary</SelectionIdentifier> <Text>Non-binary</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Age</QuestionIdentifier>
+<DisplayName>Age</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>What is your age?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>radiobutton</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Under 30</SelectionIdentifier> <Text>Under 30</Text> </Selection> <Selection> <SelectionIdentifier>30-39</SelectionIdentifier> <Text>30-39</Text> </Selection> <Selection> <SelectionIdentifier>40-49</SelectionIdentifier> <Text>40-49</Text> </Selection> <Selection> <SelectionIdentifier>50-59</SelectionIdentifier> <Text>50-59</Text> </Selection> <Selection> <SelectionIdentifier>60+</SelectionIdentifier> <Text>60+</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Education</QuestionIdentifier>
+<DisplayName>Education</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>Which of the following best describes your highest achieved education level?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>dropdown</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Less than high school degree</SelectionIdentifier> <Text>Less than high school degree</Text> </Selection> <Selection> <SelectionIdentifier>High school diploma</SelectionIdentifier> <Text>High school diploma</Text> </Selection> <Selection> <SelectionIdentifier>College degree</SelectionIdentifier> <Text>College degree</Text> </Selection> <Selection> <SelectionIdentifier>Bachelor's degree</SelectionIdentifier> <Text>Bachelor's degree</Text> </Selection> <Selection> <SelectionIdentifier>Master's degree</SelectionIdentifier> <Text>Master's degree</Text> </Selection> <Selection> <SelectionIdentifier>Doctorate degree</SelectionIdentifier> <Text>Doctorate degree</Text> </Selection> <Selection> <SelectionIdentifier>Other</SelectionIdentifier> <Text>Other</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Location</QuestionIdentifier>
+<DisplayName>Location</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>Where do you live?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>dropdown</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont</SelectionIdentifier> <Text>New England - Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont</Text> </Selection> <Selection> <SelectionIdentifier>Middle Atlantic - New Jersey, New York, Pennsylvania</SelectionIdentifier> <Text>Middle Atlantic - New Jersey, New York, Pennsylvania</Text> </Selection> <Selection> <SelectionIdentifier>East North Central - Illinois, Indiana, Michigan, Ohio, Wisconsin</SelectionIdentifier> <Text>East North Central - Illinois, Indiana, Michigan, Ohio, Wisconsin</Text> </Selection> <Selection> <SelectionIdentifier>West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota</SelectionIdentifier> <Text>West North Central - Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota</Text> </Selection> <Selection> <SelectionIdentifier>South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, West Virginia</SelectionIdentifier> <Text>South Atlantic - Delaware, District of Columbia, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, West Virginia</Text> </Selection> <Selection> <SelectionIdentifier>East South Central - Alabama, Kentucky, Mississippi, Tennessee</SelectionIdentifier> <Text>East South Central - Alabama, Kentucky, Mississippi, Tennessee</Text> </Selection> <Selection> <SelectionIdentifier>West South Central - Arkansas, Louisiana, Oklahoma, Texas</SelectionIdentifier> <Text>West South Central - Arkansas, Louisiana, Oklahoma, Texas</Text> </Selection> <Selection> <SelectionIdentifier>Mountain - Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming</SelectionIdentifier> <Text>Mountain - Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming</Text> </Selection> <Selection> <SelectionIdentifier>Pacific - Alaska, California, Hawaii, Oregon, Washington</SelectionIdentifier> <Text>Pacific - Alaska, California, Hawaii, Oregon, Washington</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Political party affiliation</QuestionIdentifier>
+<DisplayName>Political party affiliation</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>Generally speaking, do you usually think of yourself as Republican, a Democrat, an Independent, or something else?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>radiobutton</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Republican</SelectionIdentifier> <Text>Republican</Text> </Selection> <Selection> <SelectionIdentifier>Democrat</SelectionIdentifier> <Text>Democrat</Text> </Selection> <Selection> <SelectionIdentifier>Independent</SelectionIdentifier> <Text>Independent</Text> </Selection> <Selection> <SelectionIdentifier>Something else</SelectionIdentifier> <Text>Something else</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Ideological preferences</QuestionIdentifier>
+<DisplayName>Ideological preferences</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>What's your political ideology?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>radiobutton</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Liberal</SelectionIdentifier> <Text>Liberal</Text> </Selection> <Selection> <SelectionIdentifier>Conservative</SelectionIdentifier> <Text>Conservative</Text> </Selection> <Selection> <SelectionIdentifier>Moderate</SelectionIdentifier> <Text>Moderate</Text> </Selection> <Selection> <SelectionIdentifier>Unsure</SelectionIdentifier> <Text>Unsure</Text> </Selection> <Selection> <SelectionIdentifier>Other</SelectionIdentifier> <Text>Other</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
+
+<Question>
+<QuestionIdentifier>Religion</QuestionIdentifier>
+<DisplayName>Religion</DisplayName>
+<IsRequired>true</IsRequired>
+<QuestionContent>
+<Title>What's your religion?</Title>
+</QuestionContent>
+<AnswerSpecification>
+<SelectionAnswer>
+<StyleSuggestion>dropdown</StyleSuggestion><Selections> <Selection> <SelectionIdentifier>Christian</SelectionIdentifier> <Text>Christian</Text> </Selection> <Selection> <SelectionIdentifier>Muslim</SelectionIdentifier> <Text>Muslim</Text> </Selection> <Selection> <SelectionIdentifier>Hindu</SelectionIdentifier> <Text>Hindu</Text> </Selection> <Selection> <SelectionIdentifier>Jewish</SelectionIdentifier> <Text>Jewish</Text> </Selection> <Selection> <SelectionIdentifier>Agnostic</SelectionIdentifier> <Text>Agnostic</Text> </Selection> <Selection> <SelectionIdentifier>Atheist</SelectionIdentifier> <Text>Atheist</Text> </Selection> <Selection> <SelectionIdentifier>Spiritual but not religious</SelectionIdentifier> <Text>Spiritual but not religious</Text> </Selection> <Selection> <SelectionIdentifier>Other</SelectionIdentifier> <Text>Other</Text> </Selection> <Selection> <SelectionIdentifier>Unsure</SelectionIdentifier> <Text>Unsure</Text> </Selection> <Selection> <SelectionIdentifier>Prefer not to say</SelectionIdentifier> <Text>Prefer not to say</Text> </Selection></Selections>
+</SelectionAnswer>
+</AnswerSpecification>
+</Question>
