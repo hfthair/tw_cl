@@ -1367,6 +1367,9 @@
     </script>
 
     <script type="text/javascript">
+        function open_instruction() {
+            document.getElementsByTagName("crowd-form")[0].shadowRoot.querySelector('a').click();
+        }
         function on_yes(i) {
             var els = document.getElementsByName("t"+i+"q3");
             els.forEach(function (el) {
@@ -1432,7 +1435,108 @@
     <input name="id" value="${id}" style="display: none"></input>
 
 
-    <full-instructions header="Gun Control Tweet annotation">
+
+    <full-instructions header="Instruction for Annotating Moral Judgement (Care/Harm) in English Tweets about a Social Issue">
+
+        <style>
+            .overlay {
+                height: 0;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                background-color: rgb(255,255,255);
+                overflow-x: hidden;
+                transition: 0.2s;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 5%;
+                width: 95%;
+                margin: 30px;
+                margin-right: 60px;
+            }
+
+            .overlay-a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;
+                display: block;
+                transition: 0.1s;
+            }
+
+            .overlay-a:hover, .overlay-a:focus {
+                color: #f1f1f1;
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .overlay a {
+                    font-size: 20px
+                    }
+                .overlay .closebtn {
+                    font-size: 40px;
+                    top: 15px;
+                    right: 35px;
+                    }
+            }
+        </style>
+        <script>
+            /* Open when someone clicks on the span element */
+            function open_desc() {
+                document.getElementById("desc_panel").style.height = "100%";
+            }
+
+            /* Close when someone clicks on the "x" symbol inside the overlay */
+            function close_desc() {
+                document.getElementById("desc_panel").style.height = "0%";
+            }
+        </script>
+
+        <div id="desc_panel" class="overlay">
+
+            <a href="javascript:void(0)" class="overlay-a closebtn" onclick="close_desc()">&times;</a>
+        
+            <div class="overlay-content">
+                <h2>Description of Research Study</h2>
+                <p>
+                The purpose of this research study is to determine that when people talk about controversial issues in the US on Twitter, whether and how moral judgment is involved. For that reason, we recruit annotators to identity moral information from the tweets. This study is conducted by the researchers at the University of Pittsburgh.
+                </p>
+                <p>
+                If you are willing to perform the annotation task, you will be asked to read randomly selected tweets relevant to significant social issues in the US (e.g., gun regulation/rights, immigration, etc.) and determine whether the tweet contents are associated with certain moral judgment.
+                </p>
+                <p>
+                Each HIT may take about 10-15 mins, and you can choose the number of HITs that you would like to complete. Upon the completion and approval of each HIT, you will receive $2.00. Your payment will depend on how many HITS you decide to take.
+                </p>
+                <p>
+                Before you can start performing the annotation task, you are required to pass the qualification that is to ensure you well understand the annotation instruction and can adequately perform the annotation task. The qualification will take about 25 minutes and you will receive compensation once you pass the qualification. Upon you finish the qualification, you will be also asked to fill a short survey – on a voluntary basis -- about your demographic information (e.g., gender, age, political party affiliation, and self-identified ideological preferences, and religion. There are no foreseeable risks associated with this project. 
+                </p>
+                <p>
+                We will not collect any identifiable information. We will release the annotated text data to the research community so that others may replicate our results or utilize it for other analyses in their own research. We will not collect any identifiable and sensitive information, and so the data will not reveal any identifiable and sensitive information about the annotators.
+                </p>
+                <p>
+                Your Mechanical Turk Worker ID will be used to distribute payment to you and will be stored with your responses. You should be aware that your MTurk Worker ID can potentially be linked to personal information your Amazon public profile page, depending on the settings you have for your Amazon profile. We will not attempt to access or share any such information. 
+                </p>
+                <p>
+                Your work for this annotation task is voluntary, and you may withdraw from the task at any time. The study is being conducted by a research team at University of Pittsburgh. If you have any questions, you can contact the team at <a href="mailto:wtchung@pitt.edu">wtchung@pitt.edu</a>. If you agree to contribute to this study project, please continue. 
+                </p>
+            </div>
+            <center>
+                <a href="javascript:void(0)" onclick="close_desc()">Close</a>
+            </center>
+        </div>
+
+<a href="#" onclick="open_desc()"><i>Description of Research Study</i></a>
+
 <p>
 In this task, you will do the following steps: (1) read tweets that are relevant to GUN issues, (2) decide
 whether a tweet is associated with <strong><i>Care/Harm</i></strong>, and rate your confidence levels for this
@@ -1861,13 +1965,14 @@ the harm..</p>
     </full-instructions>
 
     <short-instructions>
+        <p><strong>Read <a href="#" onclick="open_instruction()"><i>full instruction</i></a> before start.</strong></p>
         <p>In this task, you will do the following steps:</p>
         <ol>
             <li><p>read tweets that are relevant to GUN issues,</p></li>
             <li><p>decide whether a tweet is associated with <strong><i>Care/Harm</i></strong>, and rate your confidence levels for this
-decision, and </p></li>
-<li><p>decide how the tweet is associated with <strong><i>Care/Harm</i></strong> -- Care only, 
-Harm only, or Both Care &amp; Harm -- and rate your confidence levels for this decision.</p></li>
+            decision, and </p></li>
+            <li><p>decide how the tweet is associated with <strong><i>Care/Harm</i></strong> -- Care only, 
+            Harm only, or Both Care &amp; Harm -- and rate your confidence levels for this decision.</p></li>
         </ol>
     </short-instructions>
 
